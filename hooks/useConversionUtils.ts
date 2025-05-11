@@ -1,6 +1,6 @@
 import { useCallback } from 'react';
-import { BCS, TxnBuilderTypes } from 'supra-l1-sdk';
-
+//import { BCS, TxnBuilderTypes } from 'supra-l1-sdk'; --This is for supra-l1-sdk v^3.0.0. Super recommended to update to V4 for axios vulnerability fixes!
+import { BCS, TxnBuilderTypes } from 'supra-l1-sdk-core';
 const useConversionUtils = () => {
     // Convert a human-readable string to Uint8Array
     const stringToUint8Array = useCallback((humanReadableStr: string) => {
